@@ -1,9 +1,18 @@
-import React from 'react'
+import useNotificationStore from "../stores/useNotificationStore";
 
-const notifications = () => {
-  return (
-    <div>notifications</div>
-  )
+export function notify(newNotification: {
+  type?: string;
+  message: string;
+  description?: string;
+  txid?: string;
+}) {
+  const { notifications, set: setNotificationStore } =
+    useNotificationStore.getState();
+
+  setNotificationStore((state: { notifications: any[] }) => {
+    state.notifications = [
+      ...notifications,
+      { type: "success", ...newNotification },
+    ];
+  });
 }
-
-export default notifications

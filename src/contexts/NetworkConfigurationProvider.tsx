@@ -18,7 +18,7 @@ export const NetworkConfigurationProvider: FC<{ children: ReactNode }> = ({
 }) => {
   const [networkConfiguration, setNetworkConfiguration] = useLocalStorage(
     "network",
-    "devneet"
+    "devnet"
   );
 
   return (
