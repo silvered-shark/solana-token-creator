@@ -34,7 +34,7 @@ const Home: NextPage = (props) => {
       </Head>
 
       <HomeView setOpenCreateModal={setOpenCreateModal} />
-      {/* <ToolView
+      <ToolView
         setOpenAirdrop={setOpenAirdrop}
         setOpenContact={setOpenContact}
         setOpenCreateModal={setOpenCreateModal}
@@ -50,7 +50,7 @@ const Home: NextPage = (props) => {
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
       <OfferView />
-      <FaqView /> */}
+      {/*<FaqView /> */}
 
       {/* Dynamic Component */}
       {/*{openCreateModal && (

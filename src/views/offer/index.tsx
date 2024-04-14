@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const index = () => {
+export const OfferView = () => {
   return (
-    <div>index</div>
-  )
-}
-
-export default index
+    <section id="features" className="pyn-20">
+      <div className="container">
+        <div className="mb-10 flex items-end justify-between">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="mb-4 text-3xl font-medium capitalize text-white">
+              Solana Token Popularity
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
