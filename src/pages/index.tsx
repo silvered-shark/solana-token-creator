@@ -50,7 +50,7 @@ const Home: NextPage = (props) => {
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
       <OfferView />
-      {/*<FaqView /> */}
+      <FaqView />
 
       {/* Dynamic Component */}
       {/*{openCreateModal && (
