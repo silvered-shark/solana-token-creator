@@ -72,7 +72,7 @@ export const ToolView = ({
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {tools.map((tool, index) => (
             <div
-              className="bg-default-950/40 rounded-xl backdrop-blur-3xl"
+              className="bg-default-950/40 rounded-xl backdrop-blur-3xl cursor-pointer"
               onClick={() => tool.function(true)}
             >
               <div className="p-6">
@@ -100,7 +100,7 @@ export const ToolView = ({
                   </h3>
                 </div>
 
-                <a className="text-primary group relative inline-flex items-center gap-2 cursor-pointer">
+                <a className="text-primary group relative inline-flex items-center gap-2">
                   <span className="bg-primary/80 absolute -bottom-0 h-px w-7/12 rounded transition-all duration-500 group-hover:w-full"></span>
                   Select & try
                   <i data-lucide={"move-right"}>

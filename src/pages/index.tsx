@@ -53,13 +53,13 @@ const Home: NextPage = (props) => {
       <FaqView />
 
       {/* Dynamic Component */}
-      {/*{openCreateModal && (
+      {openCreateModal && (
         <div className="new_loader relative h-full bg-slate-900">
           <CreateView setOpenCreateModal={setOpenCreateModal} />
         </div>
       )}
 
-      {openTokenMetaData && (
+      {/*{openTokenMetaData && (
         <div className="new_loader relative h-full bg-slate-900">
           <TokenMetadata setOpenTokenMetaData={setOpenTokenMetaData} />
         </div>
