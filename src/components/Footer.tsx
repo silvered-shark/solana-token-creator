@@ -8,7 +8,7 @@ import {
 } from "react-icons/ti";
 
 export const Footer: FC = () => {
-  const [state, handleSubmit] = useForm("mzbnzpqr");
+  const [state, handleSubmit] = useForm("xdoqbovr");
 
   if (state.succeeded) {
     return (
