@@ -194,7 +194,8 @@ export const CreateView = ({ setOpenCreateModal }) => {
     setIsLoading(true);
     const { name, symbol, description, image } = token;
     if (!name || !symbol || !description || !image) {
-      return notify({ type: "error", message: "Data Is Missing" });
+      notify({ type: "error", message: "Data Is Missing" });
+      return "";
     }
 
     const data = JSON.stringify({
@@ -221,8 +222,10 @@ export const CreateView = ({ setOpenCreateModal }) => {
       return url;
     } catch (error: any) {
       notify({ type: "error", message: "Upload to Pinata Json failed" });
+      return "";
+    } finally {
+      setIsLoading(false);
     }
-    setIsLoading(false);
   };
 
   return (
