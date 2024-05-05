@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-const NetworkSwitcher: FC = () => {
+const NetworkSwitch: FC = () => {
   return (
     <>
       <svg
-        className="slider"
+        className="slider ml-2"
         viewBox="0 0 512 512"
         height="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,4 @@ const NetworkSwitcher: FC = () => {
   );
 };
 
-export default NetworkSwitcher;
+export default NetworkSwitch;

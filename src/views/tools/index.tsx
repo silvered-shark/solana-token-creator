@@ -115,14 +115,14 @@ export const ToolView = ({
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center cursor-pointer">
+        {/* <div className="mt-10 flex justify-center cursor-pointer">
           <a className="hover:bg-primary-hover bg-primary inline-flex items-center justify-center gap-2 rounded-full px-6 py-2 text-white transition-all duration-500">
             More Tools
             <i>
               <IoIosArrowRoundForward />
             </i>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

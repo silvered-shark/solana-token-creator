@@ -2,7 +2,7 @@ import { FC } from "react";
 import dynamic from "next/dynamic";
 // Internal import
 import { useNetworkConfiguration } from "../contexts/NetworkConfigurationProvider";
-import NetworkSwitcher from "./SVG/NetworkSwitcherSVG";
+import NetworkSwitch from "./SVG/NetworkSwitcherSVG";
 
 const NetworkSwitcher: FC = () => {
   const { networkConfiguration, setNetworkConfiguration } =
@@ -12,10 +12,11 @@ const NetworkSwitcher: FC = () => {
     <>
       <input type="checkbox" id="checkbox" />
       <label className="switch">
+        <NetworkSwitch />
         <select
           value={networkConfiguration}
           onChange={(e) => setNetworkConfiguration(e.target.value || "devnet")}
-          className="select max-w-xs border-none bg-transparent outline-0"
+          className="select max-w-xs border-none bg-transparent outline-0 cursor-pointer"
         >
           <option value="mainnet-beta">main</option>
           <option value="devnet">dev</option>

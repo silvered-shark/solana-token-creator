@@ -57,6 +57,7 @@ export const DonateView = ({ setOpenSendTransaction }) => {
       );
 
       signature = await sendTransaction(transaction, connection);
+      setOpenSendTransaction(false);
       notify({
         type: "success",
         message: `Thank you, you have successfully donated ${amount}`,
