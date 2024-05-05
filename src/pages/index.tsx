@@ -14,6 +14,7 @@ import {
   ContactView,
   AirdropView,
   DonateView,
+  MarketPlace,
 } from "../views";
 
 const Home: NextPage = (props) => {
@@ -23,6 +24,7 @@ const Home: NextPage = (props) => {
   const [openContact, setOpenContact] = useState(false);
   const [openAirdrop, setOpenAirdrop] = useState(false);
   const [openSendTransaction, setOpenSendTransaction] = useState(false);
+  const [openMarketPlace, setOpenMarketPlace] = useState(false);
   return (
     <>
       <Head>
@@ -40,6 +42,7 @@ const Home: NextPage = (props) => {
         setOpenCreateModal={setOpenCreateModal}
         setOpenSendTransaction={setOpenSendTransaction}
         setOpenTokenMetaData={setOpenTokenMetaData}
+        setOpenMarketPlace={setOpenMarketPlace}
       />
 
       <FeatureView
@@ -80,6 +83,12 @@ const Home: NextPage = (props) => {
       {openSendTransaction && (
         <div className="new_loader relative h-full bg-slate-900">
           <DonateView setOpenSendTransaction={setOpenSendTransaction} />
+        </div>
+      )}
+
+      {openMarketPlace && (
+        <div className="new_loader relative h-full bg-slate-900">
+          <MarketPlace setOpenMarketPlace={setOpenMarketPlace} />
         </div>
       )}
     </>

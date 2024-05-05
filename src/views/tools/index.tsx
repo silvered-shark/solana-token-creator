@@ -9,6 +9,7 @@ export const ToolView = ({
   setOpenCreateModal,
   setOpenSendTransaction,
   setOpenTokenMetaData,
+  setOpenMarketPlace,
 }) => {
   const tools = [
     {
@@ -37,20 +38,20 @@ export const ToolView = ({
       function: setOpenSendTransaction,
     },
     {
-      name: "Buddy Token",
+      name: "NFT MarketPlace",
       icon: <MdGeneratingTokens />,
-      function: setOpenSendTransaction,
+      function: setOpenMarketPlace,
     },
-    {
-      name: "Top Token",
-      icon: <MdGeneratingTokens />,
-      function: setOpenSendTransaction,
-    },
-    {
-      name: "Solana Explorer",
-      icon: <MdGeneratingTokens />,
-      function: setOpenSendTransaction,
-    },
+    // {
+    //   name: "Top Token",
+    //   icon: <MdGeneratingTokens />,
+    //   function: setOpenSendTransaction,
+    // },
+    // {
+    //   name: "Solana Explorer",
+    //   icon: <MdGeneratingTokens />,
+    //   function: setOpenSendTransaction,
+    // },
   ];
   return (
     <section id="tools" className="py-20">
@@ -87,6 +88,8 @@ export const ToolView = ({
                         ? "text-indigo-500"
                         : index == 3
                         ? "text-yellow-500"
+                        : index == 4
+                        ? "text-blue-500"
                         : "text-teal-500"
                     }`}
                   >
