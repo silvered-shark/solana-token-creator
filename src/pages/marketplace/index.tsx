@@ -1,5 +1,12 @@
 import React from "react";
 
-export const MarketPlace = () => {
-  return <div>MarketPlace</div>;
+const MarketplacePage = () => {
+  return (
+    <div>
+      <h1>Marketplace</h1>
+      <p>This page is coming soon</p>
+    </div>
+  );
 };
+
+export default MarketplacePage;
